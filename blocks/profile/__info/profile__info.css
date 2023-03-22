@@ -9,7 +9,6 @@
 
 @media screen and (max-width: 900px) {
     .profile__info {
-        column-gap: 10px;
         max-width: 282px;
         display: flex;
         justify-content: center;
