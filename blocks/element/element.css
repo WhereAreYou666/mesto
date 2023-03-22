@@ -1,7 +1,7 @@
 .element {
     margin: 0;
     max-width: 282px;
-    height: 361px;
+    list-style-type: none;
     background-color: #fff;
     border-radius: 10px;
     color: #000;

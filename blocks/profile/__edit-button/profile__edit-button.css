@@ -8,6 +8,7 @@
     background-color: black;
     background-size: 10px;
     cursor: pointer;
+    padding: 0;
 }
 
 .profile__edit-button:hover {

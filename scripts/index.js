@@ -10,8 +10,8 @@ const profileDescription = document.querySelector('.profile__description');
 
 editProfile.addEventListener('click', () => {
     editProfilePopup.classList.add('popup__opened');
-    nameInput.value = profileName.innerHTML;
-    descriptionInput.value = profileDescription.innerHTML;
+    nameInput.value = profileName.textContent;
+    descriptionInput.value = profileDescription.textContent;
 });
 
 editProfilePopupCloseButton.addEventListener('click',() => {
@@ -22,7 +22,7 @@ editProfilePopupForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const name = nameInput.value;
     const description = descriptionInput.value;
-    profileName.innerHTML = name;
-    profileDescription.innerHTML = description;
+    profileName.textContent = name;
+    profileDescription.textContent = description;
     editProfilePopup.classList.remove('popup__opened');
 });

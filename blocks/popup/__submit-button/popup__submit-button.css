@@ -7,6 +7,7 @@
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    padding: 0;
 }
 
 .popup__submit-button:hover {
