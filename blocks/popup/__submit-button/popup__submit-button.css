@@ -1,5 +1,5 @@
 .popup__submit-button {
-    margin: 48px 36px 37px;
+    margin: 51px 36px 37px;
     width: calc(100% - 36px * 2);
     height: 50px;
     border: none;
@@ -8,6 +8,9 @@
     color: #fff;
     cursor: pointer;
     padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .popup__submit-button:hover {
