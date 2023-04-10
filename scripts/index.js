@@ -26,7 +26,7 @@ const popupZoomCloseButton = zoomPopup.querySelector('.popup__close-button');
 
 //editProfile
 editProfile.addEventListener('click', () => {
-    editProfilePopup.classList.add('popup_opened');
+    openPopup(editProfilePopup);
     nameInput.value = profileName.textContent;
     descriptionInput.value = profileDescription.textContent;
 });
@@ -37,7 +37,7 @@ editProfilePopupForm.addEventListener('submit', (event) => {
     const description = descriptionInput.value;
     profileName.textContent = name;
     profileDescription.textContent = description;
-    editProfilePopup.classList.remove('popup_opened');
+    closePopup(editProfilePopup);
 });
 
 //addCard
@@ -47,7 +47,7 @@ const createCardElement = (cardData) => {
     const cardTitle = cardElement.querySelector('.element__title');
     const cardImage = cardElement.querySelector('.element__image');
 
-    cardTitle.innerHTML = cardData.name;
+    cardTitle.textContent = cardData.name;
     cardImage.src = cardData.link;
     cardImage.alt = cardData.name;
 
@@ -82,8 +82,9 @@ const renderCardElement = (cardElement) => {
 
 initialCards.forEach((card) => {
     const element = createCardElement(card);
-    renderCardElement(element);
+    cardContainer.append(element);
 });
+
 
 //openClosePopups
 const openPopup = (popup) => {
