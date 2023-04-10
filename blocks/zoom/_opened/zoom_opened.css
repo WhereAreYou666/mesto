@@ -1,5 +1,4 @@
-.popup_opened {
+.zoom_opened.css {
     visibility: visible;
     opacity: 1;
-    height: auto;
 }
