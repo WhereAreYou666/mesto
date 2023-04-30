@@ -119,9 +119,10 @@ popupAddCardCloseButton.addEventListener('click', () => {
     closePopup(addCardPopup);
 });
 
-popupZoomCloseButton.addEventListener('click', () => {
-    closePopup(zoomPopup);
-});
+document.querySelectorAll('.popup__close-button').forEach(button => {
+  const buttonsPopup = button.closest('.popup');
+  button.addEventListener('click', () => closePopup(buttonsPopup));
+}); 
 
 //closePopupByEsc
 const closePopupByEsc = (evt) => {
@@ -134,13 +135,11 @@ const closePopupByEsc = (evt) => {
 //closePopupByOverlay
 const popupArray = Array.from(document.querySelectorAll('.popup'));
 const closePopupByOverlay = (evt) => {
-    if (evt.target === evt.currentTarget) {
-        const popupOpened = document.querySelector('.popup_opened');
-        closePopup(popupOpened);
-    }
+    if (evt.target.classList.contains('popup')) {
+        closePopup(evt.target);
+     }
     
 };
-
 
 //submit
 const handleCardSubmit = (event) => {
@@ -160,6 +159,7 @@ const handleCardSubmit = (event) => {
     renderCardElement(createCardElement(initialCardsData));
     closePopup(addCardPopup);
     addCardForm.reset();
+    editProfilePopupSubmit.classList.add('popup__button_disabled');
+    editProfilePopupSubmit.setAttribute('disabled', true);
 };
 addCardForm.addEventListener('submit', handleCardSubmit);
-
