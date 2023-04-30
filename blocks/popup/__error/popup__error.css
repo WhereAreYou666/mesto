@@ -2,7 +2,7 @@
     color: #FF0000;
     font-size: 12px;
     line-height: 15px;
-    width: 358px;
+    /* width: 358px; */
     margin: 0 auto;
     min-height: 30px;
     width: calc(100% - 2 * 36px);
