@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./pages/index.css">
     <script src="./scripts/cards.js" defer></script>
+    <script src="./scripts/validate.js" defer></script>
     <script src="./scripts/index.js" defer></script>
     <meta name="author" content="Poluyanov Ruslan">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,11 +45,13 @@
     <div class="popup popup_edit-profile">
         <div class="popup__container">
             <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-            <form class="popup__form popup__form_type_edit-profile" name="profile-form">
+            <form novalidate class="popup__form popup__form_type_edit-profile" name="popup__form" >
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__input popup__input_type_name" name="input-name" type="text" placeholder="Введите имя">
-                <input class="popup__input popup__input_type_description" name="input-description" type="text" placeholder="Введите описание">
-                <button class="popup__submit-button" type="submit">Сохранить</button>
+                <input id="input-name" class="popup__input popup__input_type_name" name="input-name" type="text" placeholder="Введите имя" minlength="2" maxlength="40" required>
+                <span id="error-input-name" class="popup__error popup__error_type_name"></span>
+                <input id="input-description" class="popup__input popup__input_type_description" name="input-description" type="text" placeholder="Введите описание" minlength="2" maxlength="200" required>
+                <span id="error-input-description" class="popup__error popup__error_type_description"></span>
+                <button disabled class="popup__submit-button popup__submit-button_edit" type="submit">Сохранить</button>
             </form>
         </div>
     </div>
@@ -56,11 +59,13 @@
     <div class="popup popup_add-card">
         <div class="popup__container">
             <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-            <form class="popup__form popup__form_type_add-card" name="add-card-form">
-                <h2 class="popup__title">Новое место</h2>
-                <input class="popup__input popup__input_type_title" name="input-title" type="text" placeholder="Название">
-                <input class="popup__input popup__input_type_link" name="input-link" type="text" placeholder="Ссылка на картинку">
-                <button class="popup__submit-button" type="submit">Создать</button>
+            <h2 class="popup__title">Новое место</h2>
+            <form novalidate class="popup__form popup__form_type_add-card" name="popup__form" >
+                <input id="input-title" class="popup__input popup__input_type_title" name="input-title" type="text" placeholder="Название" minlength="2" maxlength="40" required>
+                <span id="error-input-title" class="popup__error popup__error_type_title"></span>
+                <input id="input-link" class="popup__input popup__input_type_link" name="input-link" type="url" placeholder="Ссылка на картинку" required>
+                <span id="error-input-link" class="popup__error popup__error_type_link"></span>
+                <button disabled class="popup__submit-button popup__submit-button_add" type="submit">Создать</button>
             </form>
         </div>
     </div>
