@@ -159,7 +159,20 @@ const handleCardSubmit = (event) => {
     renderCardElement(createCardElement(initialCardsData));
     closePopup(addCardPopup);
     addCardForm.reset();
-    editProfilePopupSubmit.classList.add('popup__button_disabled');
-    editProfilePopupSubmit.setAttribute('disabled', true);
+    disableSubmit(addCardPopup);
+
+
+    //disableSubmitButton(buttonElement, inactiveButtonClass);
+    // editProfilePopupSubmit.classList.add('popup__button_disabled');
+    // editProfilePopupSubmit.setAttribute('disabled', true);
+
+    // buttonElement.classList.add(inactiveButtonClass);
+    // buttonElement.setAttribute("disabled", true);
 };
 addCardForm.addEventListener('submit', handleCardSubmit);
+
+const disableSubmit = () => {
+    const button = document.querySelector('.popup__submit-button_add');
+    button.classList.add('popup__submit-button_disabled');
+    button.setAttribute("disabled", true);
+};
