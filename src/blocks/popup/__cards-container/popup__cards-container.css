@@ -1,0 +1,14 @@
+.popup__cards-container {
+    position: relative;
+    max-width: 282px;
+    min-height: 322px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+    .popup__cards-container {
+        max-width: 430px;
+        min-height: 330px;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Poluyanov Ruslan">
+    <title>Место</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Место"/>
+    </header>
+
+    <main class="content">
+      <section class="profile">
+        <div class="profile__profile-info">
+          <button type="button" class="profile__avatar-button">
+            <img src="#" class="profile__avatar" alt="фото"/>
+          </button>
+          <div class="profile__table">
+            <div class="profile__info">
+              <h1 class="profile__title"></h1>
+              <button type="button" class="profile__edit-button"></button>
+            </div>
+            <p class="profile__subtitle"></p>
+          </div>
+        </div>
+        <button type="button" class="profile__add-button"></button>
+      </section>
+      <section class="card-items"></section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__author" href="#" target="_blank">&copy; 2023 | Poluyanov Ruslan</a>
+    </footer>
+
+    <div class="popup popup_type_profile">
+      <div class="popup__container">
+        <button class="popup__close-button popup__close-button_type_profile" type="button"></button>
+        <form class="form form_type_profile" name="editProfile" novalidate>
+          <h2 class="form__title form__title_type_profile">Редактировать профиль</h2>
+          <input type="text" placeholder="Имя" class="form__input form__input_type_name" name="profileName" id="profileName" minlength="2" maxlength="40" required autocomplete="off"/>
+          <span id="error-profileName" class="form__error"></span>
+          <input type="text" placeholder="Профессия" class="form__input form__input_type_job" name="profileJob" id="profileJob" minlength="2" maxlength="200" required autocomplete="off"/>
+          <span id="error-profileJob" class="form__error"></span>
+          <button type="submit" class="form__submit form__submit_type_profile">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_type_cards">
+      <div class="popup__cards-container">
+        <button class="popup__close-button popup__close-button_type_card" type="button"></button>
+        <form class="form form_type_cards" name="addCards" novalidate>
+          <h2 class="form__title form__title_type_cards">Новое место</h2>
+          <input type="text" placeholder="Название" class="form__input form__input_type_title" name="profileTitle" id="profileTitle" minlength="2" maxlength="30" required autocomplete="off"/>
+          <span id="error-profileTitle" class="form__error"></span>
+          <input type="URL" placeholder="Ссылка на картинку" class="form__input form__input_type_link" name="profileLink" id="profileLink" minlength="2" required/>
+          <span id="error-profileLink" class="form__error"></span>
+          <button type="submit" class="form__submit form__submit_type_cards">Создать</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_type_delete-card">
+      <div class="popup__delete-card-container">
+        <button class="popup__close-button popup__close-button_type_delete-card" typy="button"></button>
+        <form class="form form_type_delete-card">
+          <h2 class="form__title form__title_type_delete">Вы уверены?</h2>
+          <button type="submit" class="form__submit form__submit_type_delete-card">Да</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_type_image">
+      <div class="popup__image-container">
+        <button class="popup__close-button popup__close-button_type_image" type="button"></button>
+        <img class="popup__image-card"/>
+        <h2 class="popup__image-title"></h2>
+      </div>
+    </div>
+
+    <div class="popup popup_type_update-avatar">
+      <div class="popup__update-avatar-container">
+        <button class="popup__close-button popup__close-button_type_update-avatar" typy="button"></button>
+        <form class="form form_type_update-avatar" name="addCards" novalidate>
+          <h2 class="form__title form__title_type_update-avatar">Обновить аватар</h2>
+          <input type="URL" placeholder="Ссылка на картинку" class="form__input form__input_type_update-avatar" name="AvatarLink" id="AvatarLink" minlength="2" required/>
+          <span id="error-AvatarLink" class="form__error"></span>
+          <button type="submit" class="form__submit form__submit_type_update-avatar">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    
+    <template id="template">
+      <div class="card-item">
+        <div class="card-item__images">
+          <img class="card-item__img" />
+          <img src="<%=require('./images/trash.svg')%>" class="card-item__trash" alt="удалить"/>
+        </div>
+        <div class="card-item__content">
+          <h2 class="card-item__title"></h2>
+          <div class="card-item__like">
+            <button type="button" class="card-item__like_type_button"></button>
+            <div class="card-item__like_type_number"></div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>

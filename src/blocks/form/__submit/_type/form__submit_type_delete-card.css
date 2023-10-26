@@ -1,0 +1,10 @@
+.form__submit_type_delete-card {
+    padding: 0;
+    margin: 15px 22px 25px;
+ }
+
+ @media (min-width: 1024px) {
+    .form__submit_type_delete-card {
+        margin: 38px 36px 36px;
+     }
+}

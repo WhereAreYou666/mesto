@@ -1,0 +1,9 @@
+.card-item__img {
+    margin: 0;
+    padding: 0;
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    cursor: pointer;
+}

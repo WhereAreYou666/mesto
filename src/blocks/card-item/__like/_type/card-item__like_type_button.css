@@ -1,0 +1,17 @@
+.card-item__like_type_button {
+    padding: 0;
+    margin: 0;
+    width: 22px;
+    height: 19px;
+    transition: 0.5s;
+    transform: translate(10, 7px);
+    cursor: pointer;
+    background-image: url(../../../../images/Vector.svg);
+    background-color: #FFFFFF;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.card-item__like_type_button:hover {
+    opacity: 0.5;
+}

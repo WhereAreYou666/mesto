@@ -1,0 +1,16 @@
+.profile__info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    margin: 0 auto;
+    padding: 26px 0 10px;
+}
+
+@media (min-width: 768px) {
+    .profile__info {
+        margin: 0;
+        padding: 0;
+        column-gap: 18px;
+    }
+}

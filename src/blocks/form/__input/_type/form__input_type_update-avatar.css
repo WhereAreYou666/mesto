@@ -1,0 +1,10 @@
+.form__input_type_update-avatar {
+    padding-bottom: 8px;
+    margin: 54px 22px 0;
+}
+
+@media (min-width: 1024px) {
+    .form__input_type_update-avatar {
+        margin: 54px 36px 0;
+    }
+}

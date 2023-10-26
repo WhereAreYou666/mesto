@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    .profile__table {
+        padding-top: 18px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1280px) {
+    .profile__table {
+        padding-top: 22px;
+    }
+}

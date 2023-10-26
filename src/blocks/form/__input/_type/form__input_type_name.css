@@ -1,0 +1,11 @@
+.form__input_type_name {
+    padding-bottom: 8px;
+    margin: 78px 22px 0;
+}
+
+@media (min-width: 1024px) {
+    .form__input_type_name {
+        padding-bottom: 10px;
+        margin: 43px 36px 0;
+    }
+}

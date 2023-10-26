@@ -1,0 +1,5 @@
+.popup_type_image { 
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }

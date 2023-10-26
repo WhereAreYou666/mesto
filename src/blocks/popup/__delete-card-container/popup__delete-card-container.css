@@ -1,0 +1,14 @@
+.popup__delete-card-container {
+    position: relative;
+    max-width: 282px;
+    min-height: 120px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+    .popup__delete-card-container {
+        max-width: 430px;
+        min-height: 170px;
+    }
+}

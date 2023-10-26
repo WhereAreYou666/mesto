@@ -1,0 +1,16 @@
+.form__error {
+    margin-left: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    visibility: hidden;
+    opacity: 0;
+    min-height: 30px;
+}
+
+@media (min-width: 1024px) {
+    .form__error {
+        margin-left: 36px;
+    }
+}

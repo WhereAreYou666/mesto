@@ -1,0 +1,8 @@
+.card-item__like {
+    padding: 0;
+    margin: 0;
+    min-width: 22px;
+    min-height: 35px;
+    display: flex;
+    flex-direction: column;
+}

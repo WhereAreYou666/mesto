@@ -1,0 +1,11 @@
+.form__input_type_job {
+    padding-bottom: 8px;
+    margin: 0 22px 0;
+}
+
+@media (min-width: 1024px) {
+    .form__input_type_job {
+        padding-bottom: 11px;
+        margin: 0 36px 0;
+    }
+}

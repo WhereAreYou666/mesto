@@ -18,13 +18,16 @@
   * HTML;
   * CSS;
   * JS;
+  * OOP;
   * DOM;
+  * NPM;
   * Figma;
   * Git;
   * GitHub Pages;
   * Bem;
   * Grid layout;
   * Flexbox;
+  * Webpack;
 
 **GitHub Pages**
 
@@ -37,3 +40,5 @@
 * [Ссылка на макет в Figma часть 2](https://www.figma.com/file/bjyvbKKJN2naO0ucURl2Z0/JavaScript.-Sprint-5?node-id=0-1&t=OayEv6njGsshjSFe-0)
 
 * [Ссылка на макет в Figma часть 3](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?type=design&node-id=0-1&t=MS9c9UP8yM8u1xp6-0)
+
+* [Ссылка на макет в Figma часть 4](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?type=design&node-id=0-1&mode=design&t=nhAnyfz1V87NlIdy-0)

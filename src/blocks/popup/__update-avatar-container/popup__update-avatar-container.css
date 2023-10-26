@@ -1,0 +1,14 @@
+.popup__update-avatar-container {
+    position: relative;
+    max-width: 282px;
+    min-height: 222px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+    .popup__update-avatar-container {
+        max-width: 430px;
+        min-height: 272px;
+    }
+}

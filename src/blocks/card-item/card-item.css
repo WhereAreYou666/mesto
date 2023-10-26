@@ -1,0 +1,8 @@
+.card-item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 362px;
+}
